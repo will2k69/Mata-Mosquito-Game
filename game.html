@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body onresize="adjustSize()">
+    <div id="panel">
+        <div id="lifes">
+            <img id="life1" src="imagens/heart-full.png" alt="" srcset="">
+            <img id="life2" src="imagens/heart-full.png" alt="" srcset="">
+            <img id="life3" src="imagens/heart-full.png" alt="" srcset="">
+        </div>
+        <div class="cronometer">
+            Tempo restante: <span id="cronometer"></span>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('cronometer').innerHTML = time
+        var createMosquito = setInterval(function() {
+            mosquito()
+        }, timeLevel)
+    </script>
+</body>
+</html>

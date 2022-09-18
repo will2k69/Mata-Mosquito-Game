@@ -1,0 +1,27 @@
+body {
+    background: url(imagens/bg.jpg) no-repeat;
+    background-size: 100%;
+}
+div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#level {
+    margin-top: 10px;
+}
+#button {
+    animation: button 1.5s infinite;
+}
+@keyframes button {
+    0%, 100% {
+        transform: translateY(5px);
+    } 50% {
+        transform: translateY(-5px);
+    }
+}
